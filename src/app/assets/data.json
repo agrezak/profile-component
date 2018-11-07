@@ -1,0 +1,44 @@
+{
+  "userData": {
+    "avatar": "https://randomuser.me/api/portraits/men/20.jpg",
+    "name": "Harvey Specter",
+    "location": "New York, USA",
+    "likes": 100,
+    "following": 200,
+    "followers": 300,
+    "isFollowed": false,
+    "isLiked": false
+  },
+  "comments": [
+    {
+      "author": "Mike Ross",
+      "avatar": "https://randomuser.me/api/portraits/men/10.jpg",
+      "text": "Lorem Ipsum 1",
+      "date": "1541590272160"
+    },
+    {
+      "author": "Rachel Zein",
+      "avatar": "https://randomuser.me/api/portraits/women/10.jpg",
+      "text": "Lorem Ipsum 2",
+      "date": "1541590272160"
+    },
+    {
+      "author": "Mike Ross",
+      "avatar": "https://randomuser.me/api/portraits/men/10.jpg",
+      "text": "Lorem Ipsum 3",
+      "date": "1541590272160"
+    },
+    {
+      "author": "Mike Ross",
+      "avatar": "https://randomuser.me/api/portraits/men/10.jpg",
+      "comment": "Lorem Ipsum 4",
+      "date": "1541590272160"
+    },
+    {
+      "author": "Mike Ross",
+      "avatar": "https://randomuser.me/api/portraits/men/10.jpg",
+      "text": "Lorem Ipsum 5",
+      "date": "1541590272160"
+    }
+  ]
+}

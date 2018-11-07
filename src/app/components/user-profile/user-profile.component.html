@@ -1,0 +1,53 @@
+<section class="user-profile">
+
+  <div class="user-profile__avatar">
+    <img src="{{userProfile?.avatar}}" alt="User avatar">
+  </div>
+
+  <div class="user-profile__share" (click)="shareUser()">
+    share
+  </div>
+
+  <div class="user-profile__name">
+    {{userProfile?.name}}
+
+    <div class="user-profile__like" (click)="likeUser()">
+      like here
+      {{userProfile?.isLiked}}
+    </div>
+
+    <div class="user-profile__follow" (click)="followUser()">
+      follow here
+      {{userProfile?.isFollowed}}
+    </div>
+
+  </div>
+
+  <div class="user-profile__location">
+    {{userProfile?.location}}
+  </div>
+
+  <div class="user-profile__stats">
+    <span>{{userProfile?.likes}}</span>
+    <span>{{userProfile?.following}}</span>
+    <span>{{userProfile?.followers}}</span>
+  </div>
+
+  <div class="user-profile__comments">
+    <div class="user-profile__comments-toggle" (click)="toggleComments()">
+      <span *ngIf="areCommentsVisible; else showComments">Hide comments</span>
+      <ng-template #showComments>Show comments</ng-template>
+      ({{comments?.length}})
+    </div>
+
+    <div class="user-profile__comments-wrapper" [class.user-profile__comments-wrapper--hidden]="!areCommentsVisible">
+      <div *ngFor="let comment of comments" class="user-profile__comment">
+        <img src="{{comment.avatar}}" alt="User avatar">
+        {{comment.author}}
+        {{comment.text}}
+        {{comment.date}}
+      </div>
+    </div>
+  </div>
+
+</section>
